@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div class="container">
+ <div class="row my-3">
+  <div class="col-sm-6 offset-sm-3">
+   <h3>Decision Sciences & Analytics Dashboard</h3>
+   {% comment %} <button type="button" class="btn btn-primary">Add a meeting</button> {% endcomment %}
+   <br>
+   <br>
+  <p> Full Stack Developer - Intern
+<pre>
+Working on the development and integration of user-facing elements with server-side logic
+Writing reusable, testable, and efficient code
+Designing customer-facing UI and back-end services
+Working on the implementation of security and data protection
+Working on the integration of data storage solutions
+Developing and maintaining all server-side network components
+</pre>
+</p>
+   <a class="btn btn-primary" href="/addmeet" role="button">Add a Meeting</a>
+   <br>
+   <br>
+
+   <a class="btn btn-primary" href="/listmeet" role="button">Lists of Meeting</a>
+   <br>
+   <br>
+   <a class="btn btn-primary" href="/listmeet" role="button">Edit a Meeting</a>
+   <br>
+   <br>
+   <a class="btn btn-primary" href="/listmeet" role="button">Delete a Meeting</a>
+  </div>
+ </div>
+</div>
+{% endblock body %}
