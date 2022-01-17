@@ -53,13 +53,13 @@
 * To Create Super User
 
     ``` python
-    python3 manage.py createsuperuser
+    python manage.py createsuperuser
     ```
   
 * To Runserver
 
     ``` python
-    python3 manage.py runserver
+    python manage.py runserver
     ```
 [Back to Table of Contents](#table-of-contents)
 ## Backend
