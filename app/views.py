@@ -98,8 +98,9 @@ def listmeet(request):
 def edit(request,id):
     meeting = Meet.objects.filter(id=id)[0] 
     Meet.objects.filter(id=id).delete()
-    form=MeetingForm()
-    return render(request, 'edit.html', {'meeting':meeting,'form':form})  
+    data_dict = {'starting_time':meeting.starting_time,'ending_time':meeting.ending_time,'meeting_link':meeting.meeting_link,'description':meeting.description,}
+    form=MeetingForm(data_dict)
+    return render(request, 'edit.html', {'form':form,'meeting':meeting})  
 
 def delete(request,id):
     Meet.objects.filter(id=id).delete()
