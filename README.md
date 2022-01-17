@@ -1,2 +1,0 @@
-# Decision-Analytics-CRUD(Django)
-
